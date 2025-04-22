@@ -4,7 +4,7 @@ import requests
 st.title("Live currency converter")
 ammount = st.number_input("enter the ammount in INR", min_value=1)
 
-target_currency = st.selectbox("convert to:", ["USD", "EUR", "GBP", "EN", "JPY"])
+target_currency = st.selectbox("convert to:", ["USD", "EUR", "GBP", "JPY"])
 
 if st.button("convert"):
     url = "https://api.exchangerate-api.com/v4/latest/INR"
